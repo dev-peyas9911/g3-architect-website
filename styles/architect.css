@@ -1,5 +1,5 @@
 /* CSS RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,4 +12,154 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
-/*  */
+/* Shared Styles */
+.display-flex {
+    display: flex;
+}
+
+.middle-align {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    padding: 20px 25px;
+}
+
+/* dark 01 */
+.deep-dark {
+    color: #131313;
+}
+
+/* dark 02 */
+.light-dark {
+    color: #424242;
+}
+
+/* dark 03 */
+.gray-dark {
+    color: #727272;
+}
+
+.grid-image {
+    width: 100%;
+}
+
+/* Header Styles Starts Here */
+.header {
+    background-color: #FF900E10;
+    padding: 40px 0;
+}
+
+/* Navbar Styles Starts Here*/
+.nav-container {
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 50px 0; */
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 3rem;
+
+}
+
+.nav-links {
+    align-items: center;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+/* Banner Styles Starts Here */
+.banner-content {
+    /* border: 2px solid red; */
+    max-width: 850px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    margin-bottom: 20px;
+}
+
+.banner-image-container {
+    width: 100%;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+/* List Styles Starts Here */
+.list-container {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.group-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.list-content {
+    /* border: 2px solid red; */
+    max-width: 520px;
+    margin-left: 70px;
+}
+
+.list-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF900E;
+    margin-bottom: 20px;
+}
+
+.small {
+    font-weight: 400;
+}
+
+.list-description {
+    margin-bottom: 20px;
+}
+
+/* Responsive for small devices */
+@media screen and (max-width: 576px) {
+
+    .nav-container,
+    .nav-links,
+    .list-container {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        padding-bottom: 10px;
+    }
+
+    .group-image-container {
+        grid-template-columns: 1fr;
+    }
+    
+}
