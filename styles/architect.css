@@ -286,6 +286,20 @@ span.big {
     filter: grayscale(100%);
 }
 
+/* footer section styles here */
+.footer {
+    border: 2px solid white;
+    background-color: #FFF4E7;
+    margin-bottom: 100px;
+    border-radius: 8px;
+}
+
+.footer-description {
+    max-width: 620px;
+    font-size: 1.25rem;
+    margin: 50px auto;
+}
+
 
 /* Responsive for small devices */
 @media screen and (max-width: 576px) {
@@ -328,4 +342,7 @@ span.big {
         margin-bottom: 50px;
     }
     
+    .footer-description {
+        width: 100%;
+    }
 }
