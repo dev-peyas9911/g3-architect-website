@@ -1,3 +1,6 @@
+/* Adding Work sans Font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* CSS RESET */
 * {
     margin: 0;
@@ -5,8 +8,7 @@
     box-sizing: border-box;
 }
 
-/* Adding Work sans Font */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
     font-family: "Work Sans", sans-serif;
@@ -145,12 +147,93 @@ body {
     margin-bottom: 20px;
 }
 
+/* Feature styles starts here */
+.feature-container {
+    /* border: 2px solid red; */
+    margin-top: 120px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.feature-content {
+    margin-top: 40px;
+}
+
+.feature-title {
+    font-size: 3rem;
+    font-weight: 700;
+    max-width: 450px;
+    border-left: 2px solid #FF900E;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    max-width: 570px;
+    margin-bottom: 10px;
+}
+
+.feature-content-box {
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    max-width: 570px;
+    height: 140px;
+    padding: 20px 10px;
+    margin: 20px 0;
+    box-shadow: 2px 2px 3px 5px rgba(56, 55, 55, 0.071);
+}
+
+.feature-content-box-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.feature-content-box-description {
+    margin-top: 10px;
+}
+
+.f-image {
+    display: block;
+}
+
+.btn-secondary {
+    border-radius: 8px;
+    padding: 45px 42px;
+    background-color: #FF900E;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+span.big {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* facts section styles here */
+.facts-container {
+    border: 2px solid red;
+}
+
+.facts-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.facts-description {
+    margin-bottom: 20px;
+}
+
 /* Responsive for small devices */
 @media screen and (max-width: 576px) {
 
     .nav-container,
     .nav-links,
-    .list-container {
+    .list-container,
+    .feature-container {
         flex-direction: column;
     }
 
@@ -160,6 +243,15 @@ body {
 
     .group-image-container {
         grid-template-columns: 1fr;
+    }
+
+    .f-image {
+        width: 100%;
+    }
+
+    .btn-secondary {
+        margin-top: -100px;
+        margin-left: 100px;
     }
     
 }
